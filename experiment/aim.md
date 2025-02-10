@@ -1,1 +1,1 @@
-### Aim of the experiment
+Determination of rate/ extent of hydrolysis of sucrose/starch 

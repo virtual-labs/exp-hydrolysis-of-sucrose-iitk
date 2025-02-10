@@ -1,1 +1,1 @@
-## Experiment name
+## Determination of rate/ extent of hydrolysis of sucrose/starch
