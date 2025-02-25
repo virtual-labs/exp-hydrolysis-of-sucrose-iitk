@@ -34,10 +34,9 @@
 1.	Prepare 0.5% starch solution (Weigh 2.5 gm starch powder, transfer it to a 500 ml volumetric flask, dissolve with water and make the volume to 500ml) <br>
 2.	Take 7 conical flask and pour 50 ml starch solution in each flask <br>
 3.	Add 5 ml α-amylase enzyme solution (1%) in each flask <br>
-4.	Treat the solution with enzyme for 0, 5, 10, 15, 20, 25 & 30 min and mark the flask T0, T1, T2, T3, T4, T5, T6, respectively <br>
+4.	Treat the solution with enzyme for 0, 5, 10, 15 & 20 min and mark the flask T0, T1, T2, T3 and T4 respectively <br>
 5.	Titrate the Fehling solution mixture with each of the enzyme treated starch solution  <br>
-6.	Observation table <br>
-7.	Calculate reducing sugar in different enzyme treated starch solution using formula: <br>
+6.	Calculate reducing sugar in different enzyme treated starch solution using formula: <br>
 <img src="images/image_2.PNG"> <br><br>
 
 
