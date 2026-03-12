@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determination of rate/ extent of hydrolysis of sucrose/starch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+  <main class="main">
+    <div class="header" id="header">
+          <h1 id="ins">Instructions :-</h1>
+          <h1 id="text"> Click on 'START' button to start the experiment</h1>
+        </div>
+        
+        
+        <div class="footer">
+            
+          <div id="experiment">
+            
+            <!-- ------------------------------  BACKGROUNDS  ----------------------- -->
+            
+            <!-- <img id="workingtable" src="images/working-area-empty1-big-lab1.jpg" alt=""> -->
+            <img id="workingtable" src="images/bgAsset.png" alt="">
+            <!-- <img id="startinglab" src="images/my-lab-new.png" alt=""> -->
+            
+
+            
+
+            <!-- ----------------------------------------------   STEP 14   ----------------------------------------------- -->
+
+            <div id="stp14">
+
+              <table class="tables" id="tbl2">
+                <tr>
+                  <th>Sample</th>
+                  <th>Sample <br> weight (W)</th>
+                  <th>Dilution <br>volume (V2)</th>
+                  <th>Titre <br>value (V3)</th>
+                  <th>Reducing <br>sugar (%)</th>
+                </tr>
+                <tr>
+                  <td>T0</td>
+                  <td>1.25</td>
+                  <td>250</td>
+                  <td>36</td>
+                  <td id="v1"></td>
+                </tr>
+                <tr>
+                  <td>T1</td>
+                  <td>1.25</td>
+                  <td>250</td>
+                  <td>27</td>
+                  <td id="v2"></td>
+                </tr>
+                <tr>
+                  <td>T2</td>
+                  <td>1.25</td>
+                  <td>250</td>
+                  <td>19</td>
+                  <td id="v3"></td>
+                </tr>
+                <tr>
+                  <td>T3</td>
+                  <td>1.25</td>
+                  <td>250</td>
+                  <td>15</td>
+                  <td id="v4"></td>   
+                </tr>
+                <tr>
+                  <td>T4</td>
+                  <td>1.25</td>
+                  <td>250</td>
+                  <td>13</td>
+                  <td id="v5"></td>  
+                </tr>
+              </table>
+
+              <h3 id="rsugar">Reducing sugar (%) = <input type="number" onchange="setThreeNumberDecimal()" maxlength="3" max="10" min="0.000" step="0.001" id="rsugarinput" style="color:blue" placeholder="T0"></h3>
+                <button class="checked" id="checktext2" onclick="checker2()">Check</button>
+                <h3 id="ansverify2">Right answer</h3>
+                <button class="checked" id="resulttext2" onclick="resulter2()">Result</button>
+                <h3 id="formulatext2" onclick="formulating2()">Click me to see formula</h3>
+                <img id="formulaimage2" src="images/Capture-new2.PNG" alt="">
+
+            </div>
+
+
+
+            <!-- --------------------------------------------  STEP 15  ----------------------------------------- -->
+
+            <div id="stp15">
+              <h1 id="inference">Inference</h1>
+              <h1 id="outcome">Prepare the graph, Reducing sugar (%) Vs Time (min) for enzyme action, calculate its slope <br><br>
+                Slope of graph=Rate of starch hydrolysis
+              </h1>
+              <img id="graph" src="images/graph.PNG" alt="">
+              <h1 id="graphtext">The above curve indicated that the percent reducing sugar increases in the starch solution as the time of enzyme treatment increases. <br>
+                These observations clearly showing the starch hydrolysis rate increases with enzyme treatment time.</h1>
+            </div>
+
+
+            <!-- -----------------------------------------------   STEP 10   ------------------------------------------ -->
+
+            <div id="stp10">
+
+
+              <div id="timerback">
+                <h3 id="forward"> 12x forward >></h3>
+                <h3 id="naming">MM : SS</h3>
+              </div>
+
+              <div id="timevalue2"> 
+                <span class="digit1" id="min2">00</span> 
+                <span class="digit1" id="collon2">:</span> 
+                <span class="digit1" id="sec2"> 00</span> 
+              </div>
+
+
+              <img id="hotplatenew" src="images/HOT-PLATE-new.png" alt="">
+              
+              <div id="controls">
+                <button id="minus" onclick="minus1()">-</button>
+                <button id="plus" onclick="plus1()">+</button>
+                <img id="indicator" src="images/HOT-PLATE-indicator.png" alt="">
+                <!-- <div id="offbutton"></div> -->
+                <img id="onbutton" onclick="poweronplate()" src="images/HOT-PLATE-onbutton.png" alt="">
+                <h3 id="reading2">00</h3>
+              </div>
+              
+              <img id="ms5" src="images/measuring-cylinder-solution.png" alt="">
+              <img class="conicalsol" id="conicalsol1" src="images/conical-flask - 100ml-solution.png" alt="">
+              <img class="conicals" id="conical1" onclick="pourtsample()" src="images/Conical flask 100ml.png" alt="">
+              <img class="conicalsol" id="conicalsol2" src="images/conical-flask - 100ml-solution.png" alt="">
+              <img class="conicals" id="conical2" onclick="pourtsample()" src="images/Conical flask 100ml.png" alt="">
+              <img class="conicalsol" id="conicalsol3" src="images/conical-flask - 100ml-solution.png" alt="">
+              <img class="conicals" id="conical3" onclick="pourtsample()" src="images/Conical flask 100ml.png" alt="">
+              <img class="conicalsol" id="conicalsol4" src="images/conical-flask - 100ml-solution.png" alt="">
+              <img class="conicals" id="conical4" onclick="pourtsample()" src="images/Conical flask 100ml.png" alt="">
+              <img class="conicalsol" id="conicalsol5" src="images/conical-flask - 100ml-solution.png" alt="">
+              <img class="conicals" id="conical5" onclick="pourtsample()" src="images/Conical flask 100ml.png" alt="">
+
+              <h3 class="ts" id="t4" onclick="pourtsample()">T4</h3>
+              <h3 class="ts" id="t3" onclick="pourtsample()">T3</h3>
+              <h3 class="ts" id="t2" onclick="pourtsample()">T2</h3>
+              <h3 class="ts" id="t1" onclick="pourtsample()">T1</h3>
+              <h3 class="ts" id="t0" onclick="pourtsample()">T0</h3>
+
+              <img id="vsoln50" src="images/volumetric flask-sol-blue-50ml.png" alt="">
+              <img id="vsoln100" src="images/volumetric flask-sol-blue-100ml.png" alt="">
+              <img id="vsoln150" src="images/volumetric flask-sol-blue-150ml.png" alt="">
+              <img id="vsoln200" src="images/volumetric flask-sol-blue-200ml.png" alt="">
+              <img id="amylasebottle" onclick="amylase()" src="images/alpha amylase-bottle.png" alt="">
+              <img id="amylasecap" onclick="amylasecap1()" src="images/alpha amylase-cap.png" alt="">
+
+            </div>
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            <!-- -----------------------------------------------   STEP 7   -------------------------------------------- -->
+
+
+            <div id="stp7">
+
+              <img id="bsol2" src="images/Burette-solution-purple.png" alt="">
+              <img id="burettef2" src="images/filling-Burette.png" alt="">
+              <img id="eburette2" src="images/empty-Burette.png" alt="">
+              <img class="drops" id="dropblue" src="images/drop-blue.png" alt="">
+              <img class="drops" id="droppink" src="images/drop-pink.png" alt="">
+              <img id="bstand2" src="images/Burette-stand.png" alt="">
+              <div id="nob2" onclick="titration2(),titration5()"></div>
+              <img id="hotplate" src="images/HOT-PLATE.png" alt="">
+              <img id="mcap" onclick="methyle(),methyle1()" src="images/methylene-cap.png" alt="">
+              <img id="mbottle" onclick="methyle(),methyle1()" src="images/methylene-blue.png" alt="">
+
+              <div id="calculation1">
+                <h3 id="ffactor">Fehling factor = <input type="number" onchange="setFourNumberDecimal()" maxlength="4" max="1" min="0.0000" step="0.0001" id="ffactorinput" style="color:blue"></h3>
+                <button class="checked" id="checktext1" onclick="checker1()">Check</button>
+                <h3 id="ansverify">Right answer</h3>
+                <h3 id="ffactorresult">Fehling factor = </h3>
+                <button class="checked" id="resulttext1" onclick="resulter()">Result</button>
+                <h3 id="formulatext" onclick="formulating()">Click me to see formula</h3>
+                <img id="formulaimage" src="images/Capture-new.PNG" alt="">
+
+              </div>
+
+              <table class="tables" id="tbl1">
+                <tr>
+                  <th>Sample</th>
+                  <th>Titrate volume (ml)</th>
+                </tr>
+                <tr>
+                  <td>Fehling mixture</td>
+                  <td id="tvoltext">0</td>
+                </tr>
+              </table>
+
+
+
+            </div>
+
+
+            <!-- ------------------------------------------   STEP 12  ------------------------------------------- -->
+
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- ----------------------------------------------  STEP 6  ---------------------------------------- -->
+
+            
+            <div id="stp6">
+              <img id="ms3" src="images/measuring-cylinder-solution.png" alt="">
+              <img id="msol10" src="images/measuring-cylinder-solution.png" alt="">
+              <img id="mcyl10" onclick="mcylpour(),mcylpour22()" src="images/measuring cylinder 10ml.png" alt="">
+              <img id="sol20ml" src="images/conical-flask - sol 20ml.png" alt="">
+              <img id="solblue" src="images/conical-flask - sol-blue.png" alt="">
+              <img id="solbrick" src="images/conical-flask - sol-brick.png" alt="">
+              <img id="sol10ml" src="images/conical-flask - sol 10ml.png" alt="">
+              <img id="sol5ml" src="images/conical-flask - sol 5ml.png" alt="">
+              <img id="cflask100" onclick="cone20()" src="images/Conical flask 100ml.png" alt="">
+              <img id="pipettesol50" src="images/pippete-solution50ml.png" alt="">
+              <img id="pipette2" onclick="pipette11(),pipette22()" src="images/pippete.png" alt="">
+              <img id="dwatersol4" src="images/distilled-water-solution.png" alt="">
+              <img id="distilled4" onclick="diswater222(),diswater333()" src="images/distilled water-reflected.png" alt="">
+
+
+              <div id="fsolutions">
+
+                <img id="fusol1" src="images/fehling solution-upper.png" alt="">
+                <img id="fmsol1" src="images/fehling solution-middle.png" alt="">
+                <img id="fbsol1" src="images/fehling solution-bottom.png" alt="">
+                <img id="fusol2" src="images/fehling solution-upper-grey.png" alt="">
+                <img id="fmsol2" src="images/fehling solution-middle-grey.png" alt="">
+                <img id="fbsol2" src="images/fehling solution-bottom-grey.png" alt="">
+                <img id="fehlingA" src="images/fehling solution-a.png" alt="">
+                <img id="fcapa" onclick="fcap1(),fcap11()" src="images/fehling solution-cap.png" alt="">
+                <img id="fehlingB" src="images/fehling solution-b.png" alt="">
+                <img id="fcapb" onclick="fcap2(),fcap22()" src="images/fehling solution-cap.png" alt="">
+                
+              </div>
+              
+            </div>
+
+
+            <!-- -----------------------------------------   STEP 12 ------------------------------------ -->
+
+            
+            <div id="stp12">
+              
+              
+              <img class="sconicalsols" id="sconicalsols1" src="images/conical-flask - sol 20ml.png" alt="">
+              <img class="sconicalsols" id="sconicalsols2" src="images/conical-flask - sol 20ml.png" alt="">
+              <img class="sconicalsols" id="sconicalsols3" src="images/conical-flask - sol 20ml.png" alt="">
+              <img class="sconicalsols" id="sconicalsols4" src="images/conical-flask - sol 20ml.png" alt="">
+              <img class="sconicalsols" id="sconicalsols5" src="images/conical-flask - sol 20ml.png" alt="">
+              
+              <img id="sconicalsol2" src="images/conical-flask - sol 10ml.png" alt="">
+              <img id="sconicalsol1" src="images/conical-flask - sol 5ml.png" alt="">
+
+              <img class="sconicals" onclick="conicalflasklast()" id="sconical1" src="images/Conical flask 100ml.png" alt="">
+              <img class="sconicals" onclick="conicalflasklast()" id="sconical2" src="images/Conical flask 100ml.png" alt="">
+              <img class="sconicals" onclick="conicalflasklast()" id="sconical3" src="images/Conical flask 100ml.png" alt="">
+              <img class="sconicals" onclick="conicalflasklast()" id="sconical4" src="images/Conical flask 100ml.png" alt="">
+              <img class="sconicals" onclick="conicalflasklast()" id="sconical5" src="images/Conical flask 100ml.png" alt="">
+
+
+              <table class="tables" id="tbl3">
+                <tr>
+                  <th>Sample</th>
+                  <th>Titrate volume (ml)</th>
+                </tr>
+                <tr>
+                  <td>T0</td>
+                  <td id="t0volume">0</td>
+                </tr>
+                <tr>
+                  <td>T1</td>
+                  <td id="t1volume">0</td>
+                </tr>
+                <tr>
+                  <td>T2</td>
+                  <td id="t2volume">0</td>
+                </tr>
+                <tr>
+                  <td>T3</td>
+                  <td id="t3volume">0</td>
+                </tr>
+                <tr>
+                  <td>T4</td>
+                  <td id="t4volume">0</td>
+                </tr>
+              </table>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+            
+            <!-- ------------------------------------------------  STEP 5 ----------------------------------- -->
+
+            <div id="stp5">
+              <img id="funnel3" onclick="funnel11()" src="images/funnel.png" alt="">
+              <img id="vsol25" src="images/volumetric flask-solution-50ml.png" alt="">
+              <img id="vsol100" src="images/volumetric flask-solution-500ml.png" alt="">
+              <img id="v100" onclick="sugarsol()" src="images/volumetric flask-100ml.png" alt="">
+              <img id="msol50" src="images/measuring cylinder-solution-50ml.png" alt="">
+              <img id="mcyl50" onclick="measure11(),mcyl50measure()" src="images/measuring cylinder 50ml.png" alt="">
+              <img id="dwatersol3" src="images/distilled-water-solution.png" alt="">
+              <img id="distilled3" onclick="diswater111()" src="images/distilled water-reflected.png" alt="">
+              <img id="vsol475" src="images/volumetric flask-sol475ml.png" alt="">
+            </div>
+
+
+
+            <!-- -------------------------------------------- STEP 4 SOLUTIONS ----------------------------------------------------- -->
+
+
+            <div id="stp4sol">
+              <img id="tfsol" src="images/falling-titrated-sol.png" alt="">
+              <img id="fsol" src="images/falling-titrated-sol.png" alt="">
+              <img id="ms2" src="images/measuring-cylinder-solution.png" alt="">
+              <img id="fsol2" src="images/measuring-cylinder-solution.png" alt="">
+
+            </div>
+
+
+
+            <!-- --------------------------------------------  STEP 3 ---------------------------------------------- -->
+
+
+            <div id="stp3">
+              
+              <img id="bnob" src="images/Burette-nob.png" alt="">
+              <img id="funnel" onclick="funnel1()" src="images/funnel.png" alt="">
+              <img id="bsol" src="images/Burette-solution.png" alt="">
+              <img id="eburette" src="images/Burette-empty.png" alt="">
+              <img id="fburette" src="images/Burette-filling.png" alt="">
+              <div id="titration" onclick="titrate()"></div>
+              <img id="drop" src="images/drop.png" alt="">
+              <img id="pc" onclick="phenolphthalein1()" src="images/phenolphthelein-cap.png" alt="">
+              <img id="pb" src="images/phenolphthelein-bottle.png" alt="">
+              <img id="naohhalf" src="images/naoh-half.png" alt="">
+              <img id="naoh" onclick="naoh1()" src="images/naoh.png" alt="">
+              
+              
+            </div>
+
+
+            <!-- --------------------------------------------   STEP 4 -------------------------------------------------- -->
+            
+            
+            
+            <div id="stp4">
+
+              <img id="funnel2" onclick="funnel1(),funnel1010(),funnel2020()" src="images/funnel.png" alt="">
+              <img id="vsol500" src="images/volumetric flask-solution-500ml.png" alt="">
+              <img id="vsol50" src="images/volumetric flask-solution-50ml.png" alt="">
+              <img id="v500" onclick="v5001()" src="images/volumetric flask-500ml.png" alt="">
+              <img id="dwatersol2" src="images/distilled-water-solution.png" alt="">
+              <img id="distilled2" onclick="diswater2()" src="images/distilled water-reflected.png" alt="">
+
+            </div>
+
+
+
+            <!-- -------------------------------------------  STEP 2 ------------------------------- -->
+
+            <div id="stp2">
+
+              <img id="pipettesol" src="images/pippete-solution50ml.png" alt="">
+
+              <img id="ms" src="images/measuring-cylinder-solution.png" alt="">
+              <img id="dwatersol" src="images/distilled-water-solution.png" alt="">
+              <img id="distilled" onclick="diswater()" src="images/distilled water.png" alt="">
+              <img id="msolution" src="images/measuring-cylinder-solution.png" alt="">
+              <img id="mcylinder" onclick="measure()" src="images/measuring cylinder.png" alt="">
+              <img id="sulphuricsol" src="images/sulphuric-acid-solution.png" alt="">
+              <img id="sulcap" src="images/sulphuric-acid-cork.png" alt="">
+              <img id="sulphuric" src="images/sulphuric-acid.png" alt="">
+              <img id="pipette" onclick="pipette1()" src="images/pippete.png" alt="">
+
+
+            </div>
+
+
+            <!-- ------------------------------------------ STEP 1 ----------------------------------------------- -->
+
+
+            <div id="stp1">
+              <img id="machine" src="images/wheighing-machine.png" alt="">
+              <img id="spatula" onclick="spatula1()" src="images/spatula.png" alt="">
+              <button id="on" onclick="on1()">ON</button>
+              <button id="tare" onclick="tare1()">TARE</button>
+              <h3 id="reading">00.00</h3>
+
+              <img class="sample" id="sample1" src="images/protien sample2.png" alt="">
+
+
+              <img id="starch" src="images/sucrose-starch.png" alt="">
+              <img id="cap" onclick="cap1()" src="images/sucrose-starch-cap.png" alt="">
+
+
+              <img id="tflask" onclick="flask2(),flask3()" src="images/conical-flask - titrated.png" alt="">
+              <img id="cflask" onclick="flask(),flask2()" src="images/Conical flask 100ml.png" alt="">
+              <img id="cflask50" onclick="flask(),flask2()" src="images/conical-flask -50ml filled.png" alt="">
+
+            </div>
+
+
+            <!-- ------------------------------------------------   STEP 9  -------------------------------- -->
+
+            <div id="stp9">
+              <img id="dwatersol5" src="images/distilled-water-solution.png" alt="">
+              <img id="distilled5" onclick="diswater111()" src="images/distilled water-reflected.png" alt="">
+              <img id="funnel4" onclick="funnel22()" src="images/funnel.png" alt="">
+              <img id="vsol250"  src="images/volumetric flask-sol-blue.png" alt="">
+              <img id="v250" onclick="placevflask(),flaskmeasure()" src="images/volumetric flask - 250ml.png" alt="">
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- ---------------------------------- EXPERIMENT TITLE WINDOW ------------------------------- -->
+
+            <div id="expon"></div>
+              <h3 id="titletext">  Standardization <br> of <br> <i> Fehling </i> solution </h3>
+            </div>
+               
+                
+            <button id="start" onclick="start()" >START</button>
+          </div>
+        </div>
+
+
+        
+    </main>
+    <script src="script/project.js"></script>
+    <script src="script/step1.js"></script>
+    <script src="script/step2.js"></script>
+    <script src="script/step3.js"></script>
+    <script src="script/step5.js"></script>
+    <script src="script/step6.js"></script>
+    <script src="script/step7.js"></script>
+    <script src="script/step10.js"></script>
+    <script src="script/step12.js"></script>
+    <script src="script/step13.js"></script>
+    <script src="script/stopwatch2.js"></script>
+    <script src="script/bypass.js"></script>
+</body>
+</html>

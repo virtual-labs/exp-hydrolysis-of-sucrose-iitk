@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. What happens during the hydrolysis of sucrose?",
+      "answers": {
+        "a": "Formation of protein complexes",
+        "b": "Conversion to glucose and fructose",
+        "c": "Decrease in solubility",
+        "d": "Production of starch"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Why is α-amylase used in starch hydrolysis?",
+      "answers": {
+        "a": "To break down fats",
+        "b": "To cleave glycosidic bonds in starch",
+        "c": "To stabilize proteins",
+        "d": "To inhibit sugar production"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. How is the extent of hydrolysis measured in this experiment? ",
+      "answers": {
+        "a": "By observing color change",
+        "b": "By measuring the formation of precipitates",
+        "c": "By titrating with Fehling’s solution",
+        "d": "By weighing the solution"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which factor can affect the rate of enzymatic hydrolysis of starch?",
+      "answers": {
+        "a": "Protein concentration",
+        "b": "Enzyme concentration and incubation time",
+        "c": "pH of the solution only",
+        "d": "Color of the starch solution"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. What does a higher titre volume in Fehling’s test indicate?",
+      "answers": {
+        "a": "Lower concentration of reducing sugars",
+        "b": "Higher concentration of reducing sugars",
+        "c": "Increased protein content",
+        "d": "Absence of sugar"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
