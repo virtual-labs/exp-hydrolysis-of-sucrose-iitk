@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. What is the main purpose of hydrolysis in the context of sucrose and starch analysis?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To increase the solubility of carbohydrates",
+        "b": "To break down complex carbohydrates into simpler sugars",
+        "c": "To evaporate water content",
+        "d": "To enhance protein content"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +15,67 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. Which acid is commonly used for the hydrolysis of sucrose?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Sulphuric acid",
+        "b": "Hydrochloric acid",
+        "c": "Acetic acid",
+        "d": "Citric acid"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What enzyme is used in the hydrolysis of starch?",
+      "answers": {
+        "a": "Lipase",
+        "b": "Protease",
+        "c": "α-Amylase",
+        "d": "Cellulase"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which indicator is used for titration in Fehling’s test?",
+      "answers": {
+        "a": "Phenolphthalein ",
+        "b": "Methylene blue",
+        "c": "Bromothymol blue",
+        "d": "Litmus"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. What does Fehling’s test detect in a sample?",
+      "answers": {
+        "a": "Lipids",
+        "b": "Proteins",
+        "c": "Reducing sugars",
+        "d": "Starch"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
